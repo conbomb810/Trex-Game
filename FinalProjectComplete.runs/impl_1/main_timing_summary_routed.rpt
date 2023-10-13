@@ -1,0 +1,748 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Wed Dec 14 23:08:43 2022
+| Host         : DESKTOP-DMH8K7T running 64-bit major release  (build 9200)
+| Command      : report_timing_summary -max_paths 10 -report_unconstrained -file main_timing_summary_routed.rpt -pb main_timing_summary_routed.pb -rpx main_timing_summary_routed.rpx -warn_on_violation
+| Design       : main
+| Device       : 7a35t-cpg236
+| Speed File   : -1  PRODUCTION 1.23 2018-06-13
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+------------------------------------------------------------------------------------------------
+| Report Methodology
+| ------------------
+------------------------------------------------------------------------------------------------
+
+Rule       Severity          Description                  Violations  
+---------  ----------------  ---------------------------  ----------  
+TIMING-17  Critical Warning  Non-clocked sequential cell  83          
+
+Note: This report is based on the most recent report_methodology run and may not be up-to-date. Run report_methodology on the current design for the latest report.
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock (103)
+2. checking constant_clock (0)
+3. checking pulse_width_clock (0)
+4. checking unconstrained_internal_endpoints (83)
+5. checking no_input_delay (1)
+6. checking no_output_delay (10)
+7. checking multiple_clock (0)
+8. checking generated_clocks (0)
+9. checking loops (0)
+10. checking partial_input_delay (0)
+11. checking partial_output_delay (0)
+12. checking latch_loops (0)
+
+1. checking no_clock (103)
+--------------------------
+ There are 20 register/latch pins with no clock driven by root clock pin: CLK (HIGH)
+
+ There are 10 register/latch pins with no clock driven by root clock pin: DiffSelect (HIGH)
+
+ There are 2 register/latch pins with no clock driven by root clock pin: SegmentMultiplexer/cycle_count_reg[17]/Q (HIGH)
+
+ There are 10 register/latch pins with no clock driven by root clock pin: difficultySelectionModule/clkDff1/clkDivComp/data_out_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: difficultySelectionModule/easyDifficulty/clkDff1/clkDivComp/data_out_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: difficultySelectionModule/easyDifficulty/clkDff10/clkDivComp/data_out_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: difficultySelectionModule/easyDifficulty/clkDff11/clkDivComp/data_out_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: difficultySelectionModule/easyDifficulty/clkDff12/clkDivComp/data_out_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: difficultySelectionModule/easyDifficulty/clkDff13/clkDivComp/data_out_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: difficultySelectionModule/easyDifficulty/clkDff14/clkDivComp/data_out_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: difficultySelectionModule/easyDifficulty/clkDff15/clkDivComp/data_out_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: difficultySelectionModule/easyDifficulty/clkDff16/clkDivComp/data_out_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: difficultySelectionModule/easyDifficulty/clkDff17/clkDivComp/data_out_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: difficultySelectionModule/easyDifficulty/clkDff18/clkDivComp/data_out_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: difficultySelectionModule/easyDifficulty/clkDff19/clkDivComp/data_out_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: difficultySelectionModule/easyDifficulty/clkDff2/clkDivComp/data_out_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: difficultySelectionModule/easyDifficulty/clkDff20/clkDivComp/data_out_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: difficultySelectionModule/easyDifficulty/clkDff21/clkDivComp/data_out_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: difficultySelectionModule/easyDifficulty/clkDff22/clkDivComp/data_out_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: difficultySelectionModule/easyDifficulty/clkDff23/clkDivComp/data_out_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: difficultySelectionModule/easyDifficulty/clkDff24/clkDivComp/data_out_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: difficultySelectionModule/easyDifficulty/clkDff25/clkDivComp/data_out_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: difficultySelectionModule/easyDifficulty/clkDff26/clkDivComp/data_out_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: difficultySelectionModule/easyDifficulty/clkDff3/clkDivComp/data_out_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: difficultySelectionModule/easyDifficulty/clkDff4/clkDivComp/data_out_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: difficultySelectionModule/easyDifficulty/clkDff5/clkDivComp/data_out_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: difficultySelectionModule/easyDifficulty/clkDff6/clkDivComp/data_out_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: difficultySelectionModule/easyDifficulty/clkDff7/clkDivComp/data_out_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: difficultySelectionModule/easyDifficulty/clkDff8/clkDivComp/data_out_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: difficultySelectionModule/easyDifficulty/clkDff9/clkDivComp/data_out_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: difficultySelectionModule/hardDifficulty/clkDff1/clkDivComp/data_out_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: difficultySelectionModule/hardDifficulty/clkDff10/clkDivComp/data_out_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: difficultySelectionModule/hardDifficulty/clkDff11/clkDivComp/data_out_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: difficultySelectionModule/hardDifficulty/clkDff12/clkDivComp/data_out_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: difficultySelectionModule/hardDifficulty/clkDff13/clkDivComp/data_out_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: difficultySelectionModule/hardDifficulty/clkDff14/clkDivComp/data_out_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: difficultySelectionModule/hardDifficulty/clkDff15/clkDivComp/data_out_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: difficultySelectionModule/hardDifficulty/clkDff16/clkDivComp/data_out_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: difficultySelectionModule/hardDifficulty/clkDff17/clkDivComp/data_out_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: difficultySelectionModule/hardDifficulty/clkDff18/clkDivComp/data_out_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: difficultySelectionModule/hardDifficulty/clkDff19/clkDivComp/data_out_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: difficultySelectionModule/hardDifficulty/clkDff2/clkDivComp/data_out_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: difficultySelectionModule/hardDifficulty/clkDff20/clkDivComp/data_out_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: difficultySelectionModule/hardDifficulty/clkDff21/clkDivComp/data_out_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: difficultySelectionModule/hardDifficulty/clkDff22/clkDivComp/data_out_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: difficultySelectionModule/hardDifficulty/clkDff23/clkDivComp/data_out_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: difficultySelectionModule/hardDifficulty/clkDff24/clkDivComp/data_out_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: difficultySelectionModule/hardDifficulty/clkDff25/clkDivComp/data_out_reg/Q (HIGH)
+
+ There are 10 register/latch pins with no clock driven by root clock pin: difficultySelectionModule/hardDifficulty/clkDff26/clkDivComp/data_out_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: difficultySelectionModule/hardDifficulty/clkDff3/clkDivComp/data_out_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: difficultySelectionModule/hardDifficulty/clkDff4/clkDivComp/data_out_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: difficultySelectionModule/hardDifficulty/clkDff5/clkDivComp/data_out_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: difficultySelectionModule/hardDifficulty/clkDff6/clkDivComp/data_out_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: difficultySelectionModule/hardDifficulty/clkDff7/clkDivComp/data_out_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: difficultySelectionModule/hardDifficulty/clkDff8/clkDivComp/data_out_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: difficultySelectionModule/hardDifficulty/clkDff9/clkDivComp/data_out_reg/Q (HIGH)
+
+
+2. checking constant_clock (0)
+------------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock (0)
+---------------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints (83)
+-------------------------------------------------
+ There are 83 pins that are not constrained for maximum delay. (HIGH)
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay (1)
+------------------------------
+ There is 1 input port with no input delay specified. (HIGH)
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay (10)
+--------------------------------
+ There are 10 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock (0)
+------------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks (0)
+--------------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops (0)
+---------------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay (0)
+------------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay (0)
+-------------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops (0)
+----------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+        inf        0.000                      0                   93          inf        0.000                      0                   93           NA           NA                      NA                    NA  
+
+
+There are no user specified timing constraints.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| User Ignored Path Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+
+
+------------------------------------------------------------------------------------------------
+| Unconstrained Path Table
+| ------------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+(none)                                    
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------------
+Path Group:  (none)
+From Clock:  
+  To Clock:  
+
+Max Delay            93 Endpoints
+Min Delay            93 Endpoints
+--------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 rockDelay2/reg0/data_out_reg/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            G
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        8.171ns  (logic 4.638ns (56.765%)  route 3.533ns (43.235%))
+  Logic Levels:           4  (FDRE=1 LUT6=1 MUXF7=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X65Y28         FDRE                         0.000     0.000 r  rockDelay2/reg0/data_out_reg/C
+    SLICE_X65Y28         FDRE (Prop_fdre_C_Q)         0.419     0.419 r  rockDelay2/reg0/data_out_reg/Q
+                         net (fo=2, routed)           1.144     1.563    levelCycler/ssegRegitster/reg1/C_OBUF_inst_i_1
+    SLICE_X65Y28         LUT6 (Prop_lut6_I5_O)        0.296     1.859 r  levelCycler/ssegRegitster/reg1/C_OBUF_inst_i_3/O
+                         net (fo=1, routed)           0.000     1.859    SegmentMultiplexer/G_0
+    SLICE_X65Y28         MUXF7 (Prop_muxf7_I1_O)      0.217     2.076 r  SegmentMultiplexer/C_OBUF_inst_i_1/O
+                         net (fo=3, routed)           2.389     4.465    G_OBUF
+    U7                   OBUF (Prop_obuf_I_O)         3.706     8.171 r  G_OBUF_inst/O
+                         net (fo=0)                   0.000     8.171    G
+    U7                                                                r  G (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 rockDelay2/reg0/data_out_reg/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            E
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        7.758ns  (logic 4.627ns (59.643%)  route 3.131ns (40.357%))
+  Logic Levels:           4  (FDRE=1 LUT6=1 MUXF7=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X65Y28         FDRE                         0.000     0.000 r  rockDelay2/reg0/data_out_reg/C
+    SLICE_X65Y28         FDRE (Prop_fdre_C_Q)         0.419     0.419 r  rockDelay2/reg0/data_out_reg/Q
+                         net (fo=2, routed)           1.144     1.563    levelCycler/ssegRegitster/reg1/C_OBUF_inst_i_1
+    SLICE_X65Y28         LUT6 (Prop_lut6_I5_O)        0.296     1.859 r  levelCycler/ssegRegitster/reg1/C_OBUF_inst_i_3/O
+                         net (fo=1, routed)           0.000     1.859    SegmentMultiplexer/G_0
+    SLICE_X65Y28         MUXF7 (Prop_muxf7_I1_O)      0.217     2.076 r  SegmentMultiplexer/C_OBUF_inst_i_1/O
+                         net (fo=3, routed)           1.987     4.063    G_OBUF
+    U5                   OBUF (Prop_obuf_I_O)         3.695     7.758 r  E_OBUF_inst/O
+                         net (fo=0)                   0.000     7.758    E
+    U5                                                                r  E (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 rockDelay2/reg0/data_out_reg/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            C
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        7.701ns  (logic 4.642ns (60.282%)  route 3.059ns (39.718%))
+  Logic Levels:           4  (FDRE=1 LUT6=1 MUXF7=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X65Y28         FDRE                         0.000     0.000 r  rockDelay2/reg0/data_out_reg/C
+    SLICE_X65Y28         FDRE (Prop_fdre_C_Q)         0.419     0.419 r  rockDelay2/reg0/data_out_reg/Q
+                         net (fo=2, routed)           1.144     1.563    levelCycler/ssegRegitster/reg1/C_OBUF_inst_i_1
+    SLICE_X65Y28         LUT6 (Prop_lut6_I5_O)        0.296     1.859 r  levelCycler/ssegRegitster/reg1/C_OBUF_inst_i_3/O
+                         net (fo=1, routed)           0.000     1.859    SegmentMultiplexer/G_0
+    SLICE_X65Y28         MUXF7 (Prop_muxf7_I1_O)      0.217     2.076 r  SegmentMultiplexer/C_OBUF_inst_i_1/O
+                         net (fo=3, routed)           1.915     3.991    G_OBUF
+    U8                   OBUF (Prop_obuf_I_O)         3.710     7.701 r  C_OBUF_inst/O
+                         net (fo=0)                   0.000     7.701    C
+    U8                                                                r  C (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 JumpDelay/jumpPressDelayNot2/data_out_reg/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            F
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        7.464ns  (logic 4.084ns (54.720%)  route 3.380ns (45.280%))
+  Logic Levels:           3  (FDRE=1 LUT4=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X65Y28         FDRE                         0.000     0.000 r  JumpDelay/jumpPressDelayNot2/data_out_reg/C
+    SLICE_X65Y28         FDRE (Prop_fdre_C_Q)         0.456     0.456 f  JumpDelay/jumpPressDelayNot2/data_out_reg/Q
+                         net (fo=6, routed)           0.848     1.304    JumpDelay/jumpPressDelayNot2/jumpDelayed3
+    SLICE_X65Y29         LUT4 (Prop_lut4_I0_O)        0.124     1.428 r  JumpDelay/jumpPressDelayNot2/A_OBUF_inst_i_1/O
+                         net (fo=3, routed)           2.532     3.960    F_OBUF
+    V5                   OBUF (Prop_obuf_I_O)         3.504     7.464 r  F_OBUF_inst/O
+                         net (fo=0)                   0.000     7.464    F
+    V5                                                                r  F (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 JumpDelay/jumpPressDelayNot2/data_out_reg/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            B
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        7.012ns  (logic 4.109ns (58.600%)  route 2.903ns (41.400%))
+  Logic Levels:           3  (FDRE=1 LUT4=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X65Y28         FDRE                         0.000     0.000 r  JumpDelay/jumpPressDelayNot2/data_out_reg/C
+    SLICE_X65Y28         FDRE (Prop_fdre_C_Q)         0.456     0.456 f  JumpDelay/jumpPressDelayNot2/data_out_reg/Q
+                         net (fo=6, routed)           0.848     1.304    JumpDelay/jumpPressDelayNot2/jumpDelayed3
+    SLICE_X65Y29         LUT4 (Prop_lut4_I0_O)        0.124     1.428 r  JumpDelay/jumpPressDelayNot2/A_OBUF_inst_i_1/O
+                         net (fo=3, routed)           2.055     3.483    F_OBUF
+    W6                   OBUF (Prop_obuf_I_O)         3.529     7.012 r  B_OBUF_inst/O
+                         net (fo=0)                   0.000     7.012    B
+    W6                                                                r  B (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 SegmentMultiplexer/current_display_reg[1]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            ANConstraint[3]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        6.949ns  (logic 4.090ns (58.858%)  route 2.859ns (41.142%))
+  Logic Levels:           3  (FDRE=1 LUT5=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X65Y29         FDRE                         0.000     0.000 r  SegmentMultiplexer/current_display_reg[1]/C
+    SLICE_X65Y29         FDRE (Prop_fdre_C_Q)         0.456     0.456 r  SegmentMultiplexer/current_display_reg[1]/Q
+                         net (fo=8, routed)           0.863     1.319    JumpDelay/jumpPressDelay/Q[1]
+    SLICE_X65Y28         LUT5 (Prop_lut5_I4_O)        0.124     1.443 r  JumpDelay/jumpPressDelay/ANConstraint_OBUF[3]_inst_i_1/O
+                         net (fo=1, routed)           1.997     3.439    ANConstraint_OBUF[3]
+    W4                   OBUF (Prop_obuf_I_O)         3.510     6.949 r  ANConstraint_OBUF[3]_inst/O
+                         net (fo=0)                   0.000     6.949    ANConstraint[3]
+    W4                                                                r  ANConstraint[3] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 playerCollision/rockOutCollisionDelay/data_out_reg/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            ANConstraint[0]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        6.948ns  (logic 4.313ns (62.071%)  route 2.635ns (37.929%))
+  Logic Levels:           3  (FDRE=1 LUT5=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X65Y28         FDRE                         0.000     0.000 r  playerCollision/rockOutCollisionDelay/data_out_reg/C
+    SLICE_X65Y28         FDRE (Prop_fdre_C_Q)         0.456     0.456 f  playerCollision/rockOutCollisionDelay/data_out_reg/Q
+                         net (fo=4, routed)           0.828     1.284    SegmentMultiplexer/rockCollisionWire
+    SLICE_X65Y29         LUT5 (Prop_lut5_I4_O)        0.152     1.436 r  SegmentMultiplexer/ANConstraint_OBUF[0]_inst_i_1/O
+                         net (fo=1, routed)           1.807     3.243    ANConstraint_OBUF[0]
+    U2                   OBUF (Prop_obuf_I_O)         3.705     6.948 r  ANConstraint_OBUF[0]_inst/O
+                         net (fo=0)                   0.000     6.948    ANConstraint[0]
+    U2                                                                r  ANConstraint[0] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 JumpDelay/jumpPressDelayNot2/data_out_reg/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            A
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        6.882ns  (logic 4.091ns (59.437%)  route 2.792ns (40.563%))
+  Logic Levels:           3  (FDRE=1 LUT4=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X65Y28         FDRE                         0.000     0.000 r  JumpDelay/jumpPressDelayNot2/data_out_reg/C
+    SLICE_X65Y28         FDRE (Prop_fdre_C_Q)         0.456     0.456 f  JumpDelay/jumpPressDelayNot2/data_out_reg/Q
+                         net (fo=6, routed)           0.848     1.304    JumpDelay/jumpPressDelayNot2/jumpDelayed3
+    SLICE_X65Y29         LUT4 (Prop_lut4_I0_O)        0.124     1.428 r  JumpDelay/jumpPressDelayNot2/A_OBUF_inst_i_1/O
+                         net (fo=3, routed)           1.943     3.372    F_OBUF
+    W7                   OBUF (Prop_obuf_I_O)         3.511     6.882 r  A_OBUF_inst/O
+                         net (fo=0)                   0.000     6.882    A
+    W7                                                                r  A (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 SegmentMultiplexer/current_display_reg[1]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            ANConstraint[1]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        6.838ns  (logic 4.312ns (63.058%)  route 2.526ns (36.942%))
+  Logic Levels:           3  (FDRE=1 LUT5=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X65Y29         FDRE                         0.000     0.000 r  SegmentMultiplexer/current_display_reg[1]/C
+    SLICE_X65Y29         FDRE (Prop_fdre_C_Q)         0.456     0.456 f  SegmentMultiplexer/current_display_reg[1]/Q
+                         net (fo=8, routed)           0.858     1.314    SegmentMultiplexer/Q[1]
+    SLICE_X65Y28         LUT5 (Prop_lut5_I0_O)        0.154     1.468 r  SegmentMultiplexer/ANConstraint_OBUF[1]_inst_i_1/O
+                         net (fo=1, routed)           1.669     3.136    ANConstraint_OBUF[1]
+    U4                   OBUF (Prop_obuf_I_O)         3.702     6.838 r  ANConstraint_OBUF[1]_inst/O
+                         net (fo=0)                   0.000     6.838    ANConstraint[1]
+    U4                                                                r  ANConstraint[1] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 SegmentMultiplexer/current_display_reg[1]/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            ANConstraint[2]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        6.635ns  (logic 4.103ns (61.839%)  route 2.532ns (38.161%))
+  Logic Levels:           3  (FDRE=1 LUT5=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X65Y29         FDRE                         0.000     0.000 r  SegmentMultiplexer/current_display_reg[1]/C
+    SLICE_X65Y29         FDRE (Prop_fdre_C_Q)         0.456     0.456 r  SegmentMultiplexer/current_display_reg[1]/Q
+                         net (fo=8, routed)           0.858     1.314    SegmentMultiplexer/Q[1]
+    SLICE_X65Y28         LUT5 (Prop_lut5_I1_O)        0.124     1.438 r  SegmentMultiplexer/ANConstraint_OBUF[2]_inst_i_1/O
+                         net (fo=1, routed)           1.674     3.112    ANConstraint_OBUF[2]
+    V4                   OBUF (Prop_obuf_I_O)         3.523     6.635 r  ANConstraint_OBUF[2]_inst/O
+                         net (fo=0)                   0.000     6.635    ANConstraint[2]
+    V4                                                                r  ANConstraint[2] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 rockDelay2/reg0/data_out_reg/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            playerCollision/rockOutCollisionDelay/data_out_reg/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.265ns  (logic 0.128ns (48.255%)  route 0.137ns (51.745%))
+  Logic Levels:           1  (FDRE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X65Y28         FDRE                         0.000     0.000 r  rockDelay2/reg0/data_out_reg/C
+    SLICE_X65Y28         FDRE (Prop_fdre_C_Q)         0.128     0.128 r  rockDelay2/reg0/data_out_reg/Q
+                         net (fo=2, routed)           0.137     0.265    playerCollision/rockOutCollisionDelay/data_out_reg_0
+    SLICE_X65Y28         FDRE                                         r  playerCollision/rockOutCollisionDelay/data_out_reg/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 JumpDelay/jumpPressDelayNot/data_out_reg/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            JumpDelay/jumpPressDelayNot2/data_out_reg/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.280ns  (logic 0.164ns (58.537%)  route 0.116ns (41.463%))
+  Logic Levels:           1  (FDRE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X64Y28         FDRE                         0.000     0.000 r  JumpDelay/jumpPressDelayNot/data_out_reg/C
+    SLICE_X64Y28         FDRE (Prop_fdre_C_Q)         0.164     0.164 r  JumpDelay/jumpPressDelayNot/data_out_reg/Q
+                         net (fo=1, routed)           0.116     0.280    JumpDelay/jumpPressDelayNot2/data_out_reg_0
+    SLICE_X65Y28         FDRE                                         r  JumpDelay/jumpPressDelayNot2/data_out_reg/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 rockDelay1/reg0/data_out_reg/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            rockDelay2/reg0/data_out_reg/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.336ns  (logic 0.148ns (44.051%)  route 0.188ns (55.949%))
+  Logic Levels:           1  (FDRE=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X64Y28         FDRE                         0.000     0.000 r  rockDelay1/reg0/data_out_reg/C
+    SLICE_X64Y28         FDRE (Prop_fdre_C_Q)         0.148     0.148 r  rockDelay1/reg0/data_out_reg/Q
+                         net (fo=2, routed)           0.188     0.336    rockDelay2/reg0/data_out_reg_1
+    SLICE_X65Y28         FDRE                                         r  rockDelay2/reg0/data_out_reg/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 difficultySelectionModule/clkDff1/clkDivComp/data_out_reg/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            difficultySelectionModule/clkDff1/clkDivComp/data_out_reg/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.353ns  (logic 0.186ns (52.660%)  route 0.167ns (47.340%))
+  Logic Levels:           2  (FDRE=1 LUT1=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X63Y34         FDRE                         0.000     0.000 r  difficultySelectionModule/clkDff1/clkDivComp/data_out_reg/C
+    SLICE_X63Y34         FDRE (Prop_fdre_C_Q)         0.141     0.141 f  difficultySelectionModule/clkDff1/clkDivComp/data_out_reg/Q
+                         net (fo=2, routed)           0.167     0.308    difficultySelectionModule/clkDff1/clkDivComp/easyWire
+    SLICE_X63Y34         LUT1 (Prop_lut1_I0_O)        0.045     0.353 r  difficultySelectionModule/clkDff1/clkDivComp/data_out_i_1/O
+                         net (fo=1, routed)           0.000     0.353    difficultySelectionModule/clkDff1/clkDivComp/data_out_i_1_n_0
+    SLICE_X63Y34         FDRE                                         r  difficultySelectionModule/clkDff1/clkDivComp/data_out_reg/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 difficultySelectionModule/easyDifficulty/clkDff10/clkDivComp/data_out_reg/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            difficultySelectionModule/easyDifficulty/clkDff10/clkDivComp/data_out_reg/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.354ns  (logic 0.186ns (52.507%)  route 0.168ns (47.493%))
+  Logic Levels:           2  (FDRE=1 LUT1=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X59Y34         FDRE                         0.000     0.000 r  difficultySelectionModule/easyDifficulty/clkDff10/clkDivComp/data_out_reg/C
+    SLICE_X59Y34         FDRE (Prop_fdre_C_Q)         0.141     0.141 f  difficultySelectionModule/easyDifficulty/clkDff10/clkDivComp/data_out_reg/Q
+                         net (fo=2, routed)           0.168     0.309    difficultySelectionModule/easyDifficulty/clkDff10/clkDivComp/data_out_reg_0
+    SLICE_X59Y34         LUT1 (Prop_lut1_I0_O)        0.045     0.354 r  difficultySelectionModule/easyDifficulty/clkDff10/clkDivComp/data_out_i_1__16/O
+                         net (fo=1, routed)           0.000     0.354    difficultySelectionModule/easyDifficulty/clkDff10/clkDivComp/data_out_i_1__16_n_0
+    SLICE_X59Y34         FDRE                                         r  difficultySelectionModule/easyDifficulty/clkDff10/clkDivComp/data_out_reg/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 difficultySelectionModule/easyDifficulty/clkDff12/clkDivComp/data_out_reg/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            difficultySelectionModule/easyDifficulty/clkDff12/clkDivComp/data_out_reg/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.354ns  (logic 0.186ns (52.507%)  route 0.168ns (47.493%))
+  Logic Levels:           2  (FDRE=1 LUT1=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X61Y34         FDRE                         0.000     0.000 r  difficultySelectionModule/easyDifficulty/clkDff12/clkDivComp/data_out_reg/C
+    SLICE_X61Y34         FDRE (Prop_fdre_C_Q)         0.141     0.141 f  difficultySelectionModule/easyDifficulty/clkDff12/clkDivComp/data_out_reg/Q
+                         net (fo=2, routed)           0.168     0.309    difficultySelectionModule/easyDifficulty/clkDff12/clkDivComp/data_out_reg_0
+    SLICE_X61Y34         LUT1 (Prop_lut1_I0_O)        0.045     0.354 r  difficultySelectionModule/easyDifficulty/clkDff12/clkDivComp/data_out_i_1__18/O
+                         net (fo=1, routed)           0.000     0.354    difficultySelectionModule/easyDifficulty/clkDff12/clkDivComp/data_out_i_1__18_n_0
+    SLICE_X61Y34         FDRE                                         r  difficultySelectionModule/easyDifficulty/clkDff12/clkDivComp/data_out_reg/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 difficultySelectionModule/easyDifficulty/clkDff14/clkDivComp/data_out_reg/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            difficultySelectionModule/easyDifficulty/clkDff14/clkDivComp/data_out_reg/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.354ns  (logic 0.186ns (52.507%)  route 0.168ns (47.493%))
+  Logic Levels:           2  (FDRE=1 LUT1=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X61Y33         FDRE                         0.000     0.000 r  difficultySelectionModule/easyDifficulty/clkDff14/clkDivComp/data_out_reg/C
+    SLICE_X61Y33         FDRE (Prop_fdre_C_Q)         0.141     0.141 f  difficultySelectionModule/easyDifficulty/clkDff14/clkDivComp/data_out_reg/Q
+                         net (fo=2, routed)           0.168     0.309    difficultySelectionModule/easyDifficulty/clkDff14/clkDivComp/data_out_reg_0
+    SLICE_X61Y33         LUT1 (Prop_lut1_I0_O)        0.045     0.354 r  difficultySelectionModule/easyDifficulty/clkDff14/clkDivComp/data_out_i_1__20/O
+                         net (fo=1, routed)           0.000     0.354    difficultySelectionModule/easyDifficulty/clkDff14/clkDivComp/data_out_i_1__20_n_0
+    SLICE_X61Y33         FDRE                                         r  difficultySelectionModule/easyDifficulty/clkDff14/clkDivComp/data_out_reg/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 difficultySelectionModule/easyDifficulty/clkDff17/clkDivComp/data_out_reg/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            difficultySelectionModule/easyDifficulty/clkDff17/clkDivComp/data_out_reg/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.354ns  (logic 0.186ns (52.507%)  route 0.168ns (47.493%))
+  Logic Levels:           2  (FDRE=1 LUT1=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X63Y35         FDRE                         0.000     0.000 r  difficultySelectionModule/easyDifficulty/clkDff17/clkDivComp/data_out_reg/C
+    SLICE_X63Y35         FDRE (Prop_fdre_C_Q)         0.141     0.141 f  difficultySelectionModule/easyDifficulty/clkDff17/clkDivComp/data_out_reg/Q
+                         net (fo=2, routed)           0.168     0.309    difficultySelectionModule/easyDifficulty/clkDff17/clkDivComp/data_out_reg_0
+    SLICE_X63Y35         LUT1 (Prop_lut1_I0_O)        0.045     0.354 r  difficultySelectionModule/easyDifficulty/clkDff17/clkDivComp/data_out_i_1__23/O
+                         net (fo=1, routed)           0.000     0.354    difficultySelectionModule/easyDifficulty/clkDff17/clkDivComp/data_out_i_1__23_n_0
+    SLICE_X63Y35         FDRE                                         r  difficultySelectionModule/easyDifficulty/clkDff17/clkDivComp/data_out_reg/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 difficultySelectionModule/easyDifficulty/clkDff2/clkDivComp/data_out_reg/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            difficultySelectionModule/easyDifficulty/clkDff2/clkDivComp/data_out_reg/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.354ns  (logic 0.186ns (52.507%)  route 0.168ns (47.493%))
+  Logic Levels:           2  (FDRE=1 LUT1=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X61Y35         FDRE                         0.000     0.000 r  difficultySelectionModule/easyDifficulty/clkDff2/clkDivComp/data_out_reg/C
+    SLICE_X61Y35         FDRE (Prop_fdre_C_Q)         0.141     0.141 f  difficultySelectionModule/easyDifficulty/clkDff2/clkDivComp/data_out_reg/Q
+                         net (fo=2, routed)           0.168     0.309    difficultySelectionModule/easyDifficulty/clkDff2/clkDivComp/data_out_reg_0
+    SLICE_X61Y35         LUT1 (Prop_lut1_I0_O)        0.045     0.354 r  difficultySelectionModule/easyDifficulty/clkDff2/clkDivComp/data_out_i_1__8/O
+                         net (fo=1, routed)           0.000     0.354    difficultySelectionModule/easyDifficulty/clkDff2/clkDivComp/data_out_i_1__8_n_0
+    SLICE_X61Y35         FDRE                                         r  difficultySelectionModule/easyDifficulty/clkDff2/clkDivComp/data_out_reg/D
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 difficultySelectionModule/easyDifficulty/clkDff20/clkDivComp/data_out_reg/C
+                            (rising edge-triggered cell FDRE)
+  Destination:            difficultySelectionModule/easyDifficulty/clkDff20/clkDivComp/data_out_reg/D
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.354ns  (logic 0.186ns (52.507%)  route 0.168ns (47.493%))
+  Logic Levels:           2  (FDRE=1 LUT1=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X65Y37         FDRE                         0.000     0.000 r  difficultySelectionModule/easyDifficulty/clkDff20/clkDivComp/data_out_reg/C
+    SLICE_X65Y37         FDRE (Prop_fdre_C_Q)         0.141     0.141 f  difficultySelectionModule/easyDifficulty/clkDff20/clkDivComp/data_out_reg/Q
+                         net (fo=2, routed)           0.168     0.309    difficultySelectionModule/easyDifficulty/clkDff20/clkDivComp/data_out_reg_0
+    SLICE_X65Y37         LUT1 (Prop_lut1_I0_O)        0.045     0.354 r  difficultySelectionModule/easyDifficulty/clkDff20/clkDivComp/data_out_i_1__26/O
+                         net (fo=1, routed)           0.000     0.354    difficultySelectionModule/easyDifficulty/clkDff20/clkDivComp/data_out_i_1__26_n_0
+    SLICE_X65Y37         FDRE                                         r  difficultySelectionModule/easyDifficulty/clkDff20/clkDivComp/data_out_reg/D
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+
